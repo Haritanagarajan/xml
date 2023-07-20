@@ -1,0 +1,55 @@
+1]MOVIE
+
+*********************XML************************
+<?xml version="1.0" encoding="UTF-8"?>
+<MovieDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MovieDetails.xsd">
+    <MovieName> TITANIC </MovieName>
+    <Director> James Cameron </Director>
+    <Releasedate>2023-09-12</Releasedate>
+    <Actor>Leonardo DiCaprio</Actor>
+    <Actress>Gloria Stuart</Actress>
+</MovieDetails>
+
+*********************XSD************************
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="MovieDetails">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MovieName" type="xs:string" />
+                <xs:element name="Director" type="xs:string" />
+                <xs:element name="Releasedate" type="xs:date" />
+                <xs:element name="Actor" type="xs:string" />
+                <xs:element name="Actress" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+2]CAR
+
+*********************XML************************
+<?xml version="1.0" encoding="UTF-8"?>
+<CarDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MovieDetails.xsd">
+    <Name> Ford </Name>
+    <Color>Black </Color>
+    <Companyname>Ford Motor Company</Companyname>
+    <Type>Not sport car</Type>
+    <CEO> Jim Farley</CEO>
+</CarDetails>
+
+*********************XSD************************
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="CarDetails">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Name" type="xs:string" />
+                <xs:element name="Color" type="xs:string" />
+                <xs:element name="Companyname" type="xs:string" />
+                <xs:element name="Type" type="xs:string" />
+                <xs:element name="CEO" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
